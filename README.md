@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# VidHub
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**VidHub** is a YouTube clone built using **React.js** and **Material-UI**, designed to replicate the functionality of YouTube, including video searching, browsing, and viewing. It integrates **RapidAPI** to fetch video data dynamically and ensures a responsive and user-friendly UI.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Browse and search for videos in real-time using RapidAPI.
+- Responsive design with Material-UI for a modern and clean interface.
+- Watch videos directly within the app.
+- Dynamic video recommendations based on user input.
+- Mobile-friendly layout for seamless user experience across devices.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend:
+- **React.js**
+- **Material-UI** (Styling and UI Components)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### API Integration:
+- **RapidAPI** (for fetching video data and metadata)
 
-### `npm test`
+### Additional Tools:
+- **Vercel** (Frontend Hosting)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+### Prerequisites:
+- Node.js
+- RapidAPI Account (for fetching video data)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Steps to run the project:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    git clone https://github.com/yourusername/vidhub.git
+    ```
 
-### `npm run eject`
+2. Navigate to the project directory and install the dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    cd vidhub
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Set up RapidAPI:
+   - Go to [RapidAPI](https://rapidapi.com/) and sign up.
+   - Subscribe to the necessary YouTube Data API.
+   - Create a `.env` file in the root of your project and add your RapidAPI key:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    **.env**:
+    ```env
+    REACT_APP_RAPIDAPI_KEY=<Your RapidAPI Key>
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+4. Start the development server:
 
-## Learn More
+    ```bash
+    npm start
+    ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. Open the application in your browser at `http://localhost:3000`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+- Enter a search query in the search bar to browse videos.
+- Click on any video to watch it directly on the platform.
+- Browse related videos in the recommendations section.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Deployment
 
-### Analyzing the Bundle Size
+You can deploy the application using **Vercel** or any other hosting provider. Follow these steps for deployment on Vercel:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Link your GitHub repository to Vercel.
+2. Add your environment variable (`REACT_APP_RAPIDAPI_KEY`) in the Vercel dashboard.
+3. Deploy the project by following Vercel’s instructions.
 
-### Making a Progressive Web App
+## Contribution
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Feel free to fork this repository and submit pull requests to improve the project or add new features.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
